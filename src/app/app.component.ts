@@ -10,10 +10,10 @@ import { Route, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   public selectedFeature;
     constructor(private authService:AuthService,private router:Router){
-      if(!this.authService.isAuthenticated()){
-        console.log();
-        this.router.navigate(['/signin']);
-     }
+    //   if(!this.authService.isAuthenticated()){
+    //     console.log();
+    //     this.router.navigate(['/signin']);
+    //  }
     }
     ngOnInit() {
       firebase.initializeApp({
